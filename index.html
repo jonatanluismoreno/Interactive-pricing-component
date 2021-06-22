@@ -1,0 +1,75 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>js-study-group's challenge 2</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+        <h1>
+            Simple, traffic-based pricing
+        </h1>
+        <h2>
+            Sign-up for our 30-day trial. No credit card required.
+        </h2>
+    </div>
+        <section class="main">
+            <div class="main-header">
+                <a class="cant-views" id="cant-views">
+                    1M PAGEVIEWS
+                </a>
+                <a class="price" id="price">
+                    $16.00
+                </a>
+                <a class="month">
+                    / month
+                </a>
+            </div>
+            <div class="main-wrapper">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="4" value="2" class="slider1" id="myRange" onchange="sliderChange(value)">
+                </div>
+            </div>
+            <div class="dash">
+                <a class="monthly">Monthly Billing</a>
+                <label class="switch">      
+                    <input type="checkbox" onchange="swBool()">
+                    <span class="slider round"></span>
+                </label>
+                <a class="year">Year Billing</a>
+                <a class="discount">25% discount </a>
+            </div>
+            <div class="end">
+                <div class="advantages">
+                    <a> 
+                        <img src="./images/icon-check.svg" alt="not found" class="img">
+                        Unlimited websites
+                    </a>
+                    <a>
+                        <img src="./images/icon-check.svg" alt="not found" class="img">
+                        100% data ownership
+                    </a>
+                    <a>
+                        <img src="./images/icon-check.svg" alt="not found" class="img">
+                        Email reports
+                    </a>
+                </div>
+                <div class="button">
+                    <button>Start my trial</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
