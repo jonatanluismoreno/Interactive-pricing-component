@@ -328,7 +328,7 @@ button:hover {
     .main {
         display: inline-block;
         width: 15rem;
-        height: 1200px;
+        height: 600px;
     }
 
     .header {
@@ -388,10 +388,6 @@ button:hover {
         padding-right: 0.5rem;
 
     }
-
-    
-
-
 
 }
 
