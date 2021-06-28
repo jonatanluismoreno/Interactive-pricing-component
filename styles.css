@@ -12,7 +12,6 @@ body {
     flex-direction: column;
 }
 
-
 .header {
     display: flex;
     flex-direction: column;
@@ -107,8 +106,6 @@ h2 {
     box-shadow: rgb(50, 50, 93);
 }
 
-
-
 .slider1 {
     -webkit-appearance: none;
     -webkit-box-align: center;
@@ -120,7 +117,6 @@ h2 {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-
 }
 
 .slider1:hover {
@@ -142,9 +138,6 @@ h2 {
     
 }
 
-
-
-
 .slider1::-moz-range-thumb{
     width: 23px;
     height: 24px;
@@ -152,7 +145,6 @@ h2 {
     background: url('./images/icon-slider.svg');
     cursor: pointer;
 }
-
 
 /*dash*/
 
@@ -163,8 +155,8 @@ h2 {
     padding-left: 7rem;
 }
 
-
 /* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
@@ -192,7 +184,6 @@ h2 {
     transition: .4s;
 }
 
-
 .slider:before {
     position: absolute;
     content: "";
@@ -205,7 +196,6 @@ h2 {
     transition: .4s;
 }
 
-
 input:checked+.slider {
     background-color: hsl(174, 86%, 45%);
     opacity: .5;
@@ -215,7 +205,6 @@ input:focus+.slider {
     box-shadow: 0 0 1px hsl(174, 86%, 45%);
     transition: box-shadow 2s;
 }
-
 
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
@@ -295,8 +284,6 @@ input:checked+.slider:before {
 
 .button {
     display:inline-flex;
-    
-
 }
 
 button {
@@ -313,13 +300,11 @@ button {
     position: relative;
     right: 2rem;
     background-color: hsl(227, 35%, 25%);
-
 }
 
 button a {
     opacity: .8;
 }
-
 
 button:hover {
     background:hsl(174, 70%, 67%);
@@ -327,3 +312,64 @@ button:hover {
     transition: background .4s .15s;
     transition: color .4s ;
 }
+
+@media (max-width: 850px) {
+    .content {
+        display: inline-flex;
+    }
+    .main {
+        display: inline-block;
+        width: 40rem;
+        height: 1200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        display: inline-block;
+        width: 15rem;
+        height: 1200px;
+    }
+
+    .header {
+        background-size: 55%;
+    }
+    
+    h1 {
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        display: inline-flex;
+        flex-direction: column;
+        font-size: medium;
+        padding-bottom: 1vh;
+    }
+    h2 a {
+        margin: 4px;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .cant-views {
+        font-size: medium;
+        padding-left: 2.7rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .slidecontainer {
+        width: 100%;
+    }
+
+    .slider1 {
+        width: 70vw;
+    }
+
+}
+
