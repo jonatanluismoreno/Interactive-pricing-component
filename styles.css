@@ -10,24 +10,22 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 
 
 .header {
-    padding-top: 12vh;
-    padding-bottom: 4vh;
     display: flex;
-    align-self:center;
-    align-items: center;
     flex-direction: column;
     background-image: url("./images/pattern-circles.svg");
     background-repeat: no-repeat;
-    background-size: 37%;
+    background-size: 35%;
     background-position: center;
+    justify-content: center;
+    height: 300px;
 }
 
 h1 {
+    padding-top: 4rem;
     display: block;
     align-items: center;
     justify-content: center;
@@ -94,17 +92,6 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*sliderbar*/
 
 .slidecontainer {
@@ -147,7 +134,15 @@ h2 {
     background-repeat: no-repeat;
     cursor: pointer;
     
+    
 }
+
+.slider1::-webkit-slider-thumb:hover {
+    box-shadow:0px 0px 5px rgb(255, 0, 0);
+}
+
+
+
 
 .slider1::-moz-range-thumb{
     width: 23px;
@@ -158,17 +153,12 @@ h2 {
 }
 
 
-
-
-
-
-
-
 /*dash*/
 
 .dash {
     display: flex;
     padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -177,7 +167,7 @@ h2 {
     position: relative;
     display: inline-block;
     width: 52px;
-    height: 26px;
+    height: 29px;
 }
 
 /* Hide default HTML checkbox */
@@ -200,14 +190,15 @@ h2 {
     transition: .4s;
 }
 
+
 .slider:before {
     position: absolute;
     content: "";
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
     left: 4px;
     bottom: 4.6px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -215,6 +206,7 @@ h2 {
 
 input:checked+.slider {
     background-color: hsl(174, 86%, 45%);
+    opacity: .5;
 }
 
 input:focus+.slider {
@@ -239,26 +231,6 @@ input:checked+.slider:before {
 }
 
 
-
-/*
-
-Soft Cyan (Full Slider Bar):hsl(174, 77%, 80%)
-Strong Cyan (Slider Backround): hsl(174, 86%, 45%)
-Light Grayish Red (Discount Background): hsl(14, 92%, 95%)
-Light Red (Discount Text): hsl(15, 100%, 70%)
-Pale Blue (CTA Text): hsl(226, 100%, 87%)
-
-*/
-
-/*
-White (Pricing Component Background): hsl (0, 0%, 100%) 
-Very Pale Blue (Main Background): hsl(230, 100%, 99%) 
-Light Grayish Blue (Empty Slider Bar): hsl(224, 65%, 95%)
-Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
-Grayish Blue (Text): hsl(225, 20%, 60%)
-Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%)
-*/
-
 .monthly {
     padding-right: 1.5rem;
     color: hsl(225, 20%, 60%);
@@ -278,21 +250,29 @@ Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%)
     background-color: hsl(14, 92%, 95%);
 }
 
+/* line */
+
+.line {
+    border-width: 0;
+    height: 2px;
+    color: rgb(255, 255, 255);
+    width: 110%;
+    
+}
 
 /* end  */ 
 
 .end {
-    padding-top: 4rem;
+    padding-top: 1rem;
     display: flex;
-    flex-direction: column;
-    width: 35rem;
-    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
 }
 
 .advantages {
     display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
+    flex-direction: column; 
     width: 25vw;
 }
 
@@ -308,33 +288,22 @@ Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%)
 
 .button {
     display:inline-flex;
-    width: 8vw;
 
 }
 
 button {
-    color:hsl(226, 100%, 87%);
+    color:hsl(0, 0%, 100%);
     display: inline-block;
     padding-bottom: 5rem;
     border-radius: 30px;
     margin: 1em;
-    padding: 1em 2em;
+    padding: 1em 4em;
     border: 0;
     cursor: pointer;
     text-align: center;
     white-space: nowrap;
     position: relative;
+    right: 2rem;
     background-color: hsl(227, 35%, 25%);
 }
 
-/*
-;
-
-
-
-
-
-font-family: 'Open Sans',
-sans-serif;
-font-size: 14px;
-*/
